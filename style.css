@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+main {
+  padding: 0 16px;
+  width: 375px;
+  margin: auto;
+}
+
+.general img {
+  max-width: 100%;
+}
+
+.start {
+  background-color: #13183f;
+  border-radius: 28px;
+  color: #fff;
+  padding: 9px 24px 11px;
+  border: none;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+  color: #13183f;
+  margin-top: 22px;
+}
+.general p {
+  color: #83869a;
+  line-height: 1.63;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 26px;
+}
+
+.general button {
+  background-image: linear-gradient(to bottom, #ff6f48, #f02aa6);
+  margin-top: 24px;
+  padding: 15px 37px 15px 38px;
+  color: #fff;
+  line-height: 1.63;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.popular {
+  margin: 0 0 16px;
+  padding: 24px 29px 32px 28px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+  background-image: linear-gradient(to bottom, #ff6f48, #f02aa6);
+}
+
+.course {
+  border-radius: 10px;
+  position: relative;
+  padding: 56px 29px 32px 28px;
+  box-shadow: 0 25px 50px 0 rgba(6, 22, 141, 0.04);
+}
+
+.course p {
+  margin: 16px 0 24px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  color: #83869a;
+}
+
+.course button {
+  all: unset;
+  color: #f74780;
+  line-height: 28px;
+  font-size: 18px;
+  margin: 24px 182px 0 0;
+  background-image: linear-gradient(to bottom, #fff, #f0f1ff);
+}
+
+.course img {
+  position: absolute;
+  top: -24px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 16px;
+  background-color: #13183f;
+}
+footer button {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.75;
+  background-image: linear-gradient(to bottom, #4851ff, #f02aa6);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("./assets/image-hero-tablet.webp");
+    background-repeat: no-repeat;
+    background-position: top -80px right -300px;
+  }
+  header {
+    padding: 31px 39px;
+  }
+  main {
+    width: 768px;
+  }
+
+  .general {
+    width: 398px;
+  }
+
+  .general img {
+    display: none;
+  }
+
+  .courses {
+    margin-top: 210px;
+    gap: 56px 10px;
+  }
+  .course,
+  .popular {
+    width: 340px;
+  }
+  footer {
+    padding: 36px 39px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .start:hover {
+    opacity: 0.5;
+  }
+  body {
+    background-image: url("./assets/image-hero-desktop.webp");
+    background-repeat: no-repeat;
+    background-position: top -300px right -300px;
+  }
+  header {
+    padding: 31px 39px;
+  }
+  main {
+    width: 1110px;
+  }
+  .general img {
+    display: none;
+  }
+}
